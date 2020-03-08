@@ -21,3 +21,17 @@ function increment(n) {
 function decrement(n) {
   return n -= 1;
 }
+
+function makeInt(n) {
+  if (parseInt(n, 10) != NaN){
+    return parseInt(n, 10);
+  }
+  return NaN;
+}
+
+function preserveDecimal(n) {
+  if (parseFloat(n) != NaN) {
+    return parseFloat(n);
+  }
+  return NaN;
+}
